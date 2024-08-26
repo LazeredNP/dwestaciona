@@ -1,0 +1,2 @@
+FLASK_APP=estacionaa.py
+FLASK_ENV=dvelopment
