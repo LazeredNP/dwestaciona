@@ -1,16 +1,25 @@
 {% extends 'navegacao.html' %}
 {% block conteudo %}
+
+<p>Crie sua conta na EstacionaFácil!</p>
+
 <form>
     <div class="form-group">
-      <label for="exampleInputEmail1">CPF</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu CPF">
+      <label for="entradacpf">CPF</label>
+      <input type="email" class="form-control" id="entradacpf" aria-describedby="emailHelp" placeholder="Digite seu CPF">
       <small id="emailHelp" class="form-text text-muted">Seu CPF é um dado privado e não será compartilhado com terceiros.</small>
     </div>
+
+    <div class="form-group">
+        <label for="entradanascimento">Data de Nascimento</label>
+        <input type="date" id="entradanascimento">
+    </div>
+
     <div class="form-group">
       <label for="exampleInputPassword1">Senha</label>
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-{% endblock%}
+    <button type="submit" class="btn btn-success">Continuar</button>
+</form>
 
+{% endblock%}
