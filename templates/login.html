@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EstacionaFácil</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends 'navegacao.html' %}
+{% block conteudo %}
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">CPF</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu CPF">
+      <small id="emailHelp" class="form-text text-muted">Seu CPF é um dado privado e não será compartilhado com terceiros.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Senha</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock%}
+
